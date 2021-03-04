@@ -1,0 +1,72 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PROVA</title>
+
+    <style media="screen">
+
+    body{
+      background-color: grey;
+    }
+    h1{
+      text-align: center;
+      color: blue;
+      margin-top: 200px;
+    }
+    </style>
+  </head>
+  <body>
+    <h1 id="risultato">prova</h1>
+
+    <script type="text/javascript">
+
+
+        // ex mail***
+        // var arr = ["stef@alice.it", "stef@libero.it", "stef@wind.it"];
+        // var index = prompt('inserisci la tua mail');
+
+
+        // primo metodo***
+
+        // var accessoConsentito = false;
+        // for (var i = 0; i < arr.length; i++){
+        //   console.log("giro n " + i + ": " + arr[i] )
+        //   if (arr[i] == index){
+        //     accessoConsentito = true;
+        //     document.getElementById('risultato').innerHTML = "mail valida";
+        //   }
+        // }
+        // console.log(accessoConsentito)
+
+        // secondo metoto***
+
+        // for (var i = 0; i < arr.length; i++){
+        //   console.log("giro n " + i + ": " + arr[i] )
+        //
+        //
+        //   var emailOK = arr[i] == index
+        //
+        //   console.log(emailOK)
+        //   if (emailOK) {
+        //     break;
+        //   }
+        // }
+
+        // ex dadi
+
+        var min = 1;
+        var max = 6 - min + 1;
+        var rndPlayer = Math.floor(Math.random() * max) + min;
+        var rndComputer = Math.floor(Math.random() * max) + min;
+
+        console.log('player: ' + rndPlayer)
+        console.log('Computer: ' + rndComputer)
+
+        if (rndPlayer > rndComputer){
+          document.getElementById('risultato').innerHTML = "il vincitore è il PLAYER con risultato di: " + rndPlayer;
+        } else if(rndPlayer < rndComputer){
+          document.getElementById('risultato').innerHTML = "il vincitore è il COMPUTER con risultato di: " + rndComputer;
+        }
+    </script>
+  </body>
+</html>
